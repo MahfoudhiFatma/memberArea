@@ -1,0 +1,29 @@
+/* Small Devices */
+@media only screen and (max-width: 768px){
+    body{
+   width: 220%
+        
+    }
+    header{
+       width: 103%
+    }
+    header h1{
+        margin: 150px 25px;
+        padding: 50px 30px;
+    
+    }
+    .signup{
+        width: 103%
+    }
+    .form-div{
+        margin-left: 150px
+        
+    }
+
+}
+
+/* Small Devices and Tablets */
+@media only screen and (max-width: 768px){
+    
+}
+

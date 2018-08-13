@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Member Area</title>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:500italic,600italic,600,700,700italic,300italic,300,400,400italic,800,900'
+        rel='stylesheet' type='text/css'>
+    <!-- Fontawesome  -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- BOOTSTAP  -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <!-- CSS  -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- Responsive design  -->
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+
+</head>
+
+<body>
+    <header id="HOME">
+        <div class="header-overly img-responsive">
+            <nav class="navbar navbar-dark">
+                <ul class="nav-right">
+                    <li>
+                        <a href="#HOME">ESPACE MEMBRE</li>
+                    <li>
+                        <a href="#HOME" class="nav-item">HOME</a>
+                    </li>
+                </ul>
+                <ul class="nav-left">
+                    <li>
+                        <a href="#SIGNUP" class="nav-item">SIGN UP</a>
+                    </li>
+                    <li>
+                        <a href="#LOGIN" class="nav-item">LOG IN</a>
+                    </li>
+                </ul>
+            </nav>
+            <h1>
+                <span class="membre">Bienvenue, vous etes maintenant</span> connecté dans notre espace membre
+            </h1>
+        </div>
+    </header>
+    <section class="signup" id="SIGNUP">
+        <div class="row">
+            <div class="signup-title">
+                <h1>Sign up with your email address</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 offset-md-4 form-div">
+                <form method="POST" id="formValidation" action="#">
+                    <div class="form-group">
+                        <input type="text" id="contactName" name="contactName" class="form-control" placeholder="Nom Complet">
+                        <span class="fa fa-edit errspan"></span>
+                        <p id="msg1" class="msg"></p>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="contactPsd" name="contactPsd" class="form-control" placeholder="Pseudo">
+                        <span class="fa fa-user errspan"></span>
+                        <p id="msg2" class="msg"></p>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="contactEmail" name="contactEmail" class="form-control" placeholder="Email">
+                        <span class="fa fa-envelope errspan"></span>
+                        <p id="msg3" class="msg"></p>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="contactPwd" name="contactPwd" class="form-control" placeholder="Mot de Passe">
+                        <span class="fa fa-lock errspan"></span>
+                        <p id="msg4" class="msg"></p>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="contactPwdc" name="contactPwdc" class="form-control" placeholder="Confirmer votre mot de Passe">
+                        <span class="fa fa-info-circle errspan"></span>
+                        <p id="msg5" class="msg"></p>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">J'accepte
+                            <span>les termes et les conditions </span>
+                        </label>
+                    </div>
+
+                    <div class="form-btn">
+                        <button type="submit" id="signup" onclick="return valid()">SIGN UP</button>
+                        <p>or</p>
+                        <button type="submit">SIGN UP WITH GITHUB</button>
+
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="login" id="LOGIN">
+        <div class="row">
+            <div class="signup-title">
+                <h1>Log in with your email address</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 offset-md-4 form-div">
+                <form method="POST" action="#">
+                    <div class="form-group">
+                        <input type="text" id="contactPsd1" name="contactPsd1" class="form-control" placeholder="Pseudo">
+                        <span class="fa fa-user errspan"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="contactPwd2" name="contactPwd" class="form-control" placeholder="Mot de Passe">
+                        <span class="fa fa-lock errspan"></span>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                        <label class="form-check-label" for="exampleCheck2">Restez connecté
+                            <span class="mp">Mot de passe oublié? </span>
+                        </label>
+                    </div>
+
+                    <div class="form-btn">
+                        <button type="submit">LOG IN</button>
+                        <p>or</p>
+                        <button type="submit">LOG IN WITH GITHUB</button>
+
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <div class="copyright">
+            <p>Copyright &copy; 2018
+                <a href="#"> -Member's Area</a>
+            </p>
+
+            <ul>
+                <li>
+                    <i class="fa fa-facebook"></i>
+                </li>
+                <li>
+                    <i class="fa fa-linkedin"></i>
+                </li>
+                <li>
+                    <i class="fa fa-twitter"></i>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>
